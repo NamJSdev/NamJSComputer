@@ -354,6 +354,37 @@ body[data-aos-duration="1000"] [data-aos],
   border: 1px solid;
   border-color: var(--color--green);
 }
+#btnZaloChat {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    background: #028fe3;
+    border-radius: 50%;
+    background: rgba(2, 143, 227, 1);
+    box-shadow: 0 0 0 0 rgb(2 143 227);
+    position: fixed;
+    right: 28px;
+    top: 75%;
+    bottom: 50px;
+    overflow: hidden;
+    z-index: 100;
+    transform: scale(1);
+    animation: pulse-blue 2s infinite;
+  }
+  @keyframes pulse-blue {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgb(2 143 227 / 70%);
+    }
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgb(2 143 227 / 0%);
+    }
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgb(2 143 227 / 0%);
+    }
+}
 /* end common */
 
 /* Header */

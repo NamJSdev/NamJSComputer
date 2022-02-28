@@ -245,6 +245,10 @@
   cursor: pointer;
   color: var(--color-black);
 }
+.badge-cir-white:hover{
+  background-color: var(--color--blue);
+  color: var(--color--white);
+}
 .swiper-button-white{
   display: none;
 }
@@ -319,7 +323,6 @@
   max-width: 100%;
 }
 /* end */
-
 /* quantity */
 .buttons_added {
   opacity:1;

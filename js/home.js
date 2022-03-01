@@ -28,10 +28,10 @@ $('.slide-item').owlCarousel({
         0:{
             items:1
         },
-        600:{
-            items:1
+        768:{
+            items:2
         },
-        1000:{
+        1025:{
             items:4
         }
     }
@@ -64,12 +64,12 @@ $('.trademark-slide').owlCarousel({
     autoplayHoverPause:true,
     responsive:{
         0:{
-            items:1
+            items:2
         },
-        600:{
-            items:1
+        768:{
+            items:3
         },
-        968:{
+        1025:{
             items:6
         }
     }
@@ -199,17 +199,31 @@ function filter(){
     }
     else if(conceptName == 'Laptop'){
         laptop.fadeIn();
-        desktop.fadeOut();
-        pk.fadeOut();
+        desktop.hide();
+        pk.hide();
     }
     else if(conceptName == 'Màn hình'){
-        laptop.fadeOut();
+        laptop.hide();
         desktop.fadeIn();
-        pk.fadeOut();
+        pk.hide();
     }
     else if(conceptName == 'Phụ kiện'){
-        laptop.fadeOut();
-        desktop.fadeOut();
+        laptop.hide();
+        desktop.hide();
         pk.fadeIn();
     }
 };
+// Menu phone 
+// menu_phone
+$(document).on('click','.menu__phone',function(){
+    if($(this).find('.fas').hasClass('fa-bars')){
+        $(this).find('.fas').removeClass('fa-bars').addClass('fa-times')
+        $('.nav__menu-phone').css({'transition':'left 0.5s'})
+        $('.nav__menu-phone').css({'left':'0px'})
+    }
+    else{
+        $(this).find('.fas').removeClass('fa-times').addClass('fa-bars')
+        $('nav__menu-phone').css({'transition':'left 0.5s'})
+        $('.nav__menu-phone').css({'left':'-3000px'})
+    }
+});

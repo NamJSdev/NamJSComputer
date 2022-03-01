@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../css/all.min.css">
     <link rel="stylesheet" href="../css/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/shop.css">
 </head>
 <body>
@@ -192,42 +194,42 @@
         <!-- end breadcrumb -->
         
         <!-- slider -->
-        <div class="slider pt-5 pb-4 bgr-1">
+        <div class="slider pt-5 pb-4">
             <div class="container">
                 <div class="owl-carousel owl-theme slider__first">
                     <div class="slide">
                         <img src="../images/banner/banner13.png" alt="">
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Mua Ngay</a>
+                        <a class="btn btn-primary btn-lg" href="../html/shopdetail.html" role="button">Mua Ngay</a>
                     </div>
                     <div class="slide">
                         <img src="../images/banner/banner8.png" alt="">
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Mua Ngay</a>
+                        <a class="btn btn-primary btn-lg" href="../html/shopdetail.html" role="button">Mua Ngay</a>
                     </div>
                     <div class="slide">
                         <img src="../images/banner/banner7.png" alt="">
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Mua Ngay</a>
+                        <a class="btn btn-primary btn-lg" href="../html/shopdetail.html" role="button">Mua Ngay</a>
                     </div>
                     <div class="slide">
                         <img src="../images/banner/banner9.png" alt="">
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Mua Ngay</a>
+                        <a class="btn btn-primary btn-lg" href="../html/shopdetail.html" role="button">Mua Ngay</a>
                     </div>
                     <div class="slide">
                         <img src="../images/banner/banner10.png" alt="">
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Mua Ngay</a>
+                        <a class="btn btn-primary btn-lg" href="../html/shopdetail.html" role="button">Mua Ngay</a>
                     </div>
                     <div class="slide">
                         <img src="../images/banner/banner11.png" alt="">
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Mua Ngay</a>
+                        <a class="btn btn-primary btn-lg" href="../html/shopdetail.html" role="button">Mua Ngay</a>
                     </div>
                     <div class="slide">
                         <img src="../images/banner/banner12.png" alt="">
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Mua Ngay</a>
+                        <a class="btn btn-primary btn-lg" href="../html/shopdetail.html" role="button">Mua Ngay</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="content__Product bgr-1 pt-5 pb-5">
+        <div class="content__Product pt-5 pb-5">
             <div class="container">
                 <div class="pro-header mb-5">
                     <div class="title d-flex justify-content-between">
@@ -248,7 +250,8 @@
                         </ul>
                         <div class="filters d-flex w-auto align-items-center justify-content-center mr-3">
                             <p class="mb-0 pt-2 pb-2 w-25">Lọc theo: </p>
-                            <select class="form-control w-75">
+                            <select id="aioConceptName" class="form-control w-75">
+                                <option>All</option>
                                 <option>Laptop</option>
                                 <option>Màn hình</option>
                                 <option>Phụ kiện</option>
@@ -256,9 +259,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-content">
-                    <div class="row row-gap tab-pane fade show active d-flex" id="pane-tab-1" role="tabpanel" aria-labelledby="tab1">
-                        <div class="col-xl-3">
+                <div class="tab-content boxes">
+                    <div class="row row-gap tab-pane fade show active" id="pane-tab-1" role="tabpanel" aria-labelledby="tab1">
+                        <div class="col-xl-3 laptop">
                             <div class="card item-product img-hover box-shadow-1">
                                 <img class="card-img-top pl-3 pr-3" src="../images/Mac/p1.webp" alt="">
                                 <div class="card-body">
@@ -286,20 +289,20 @@
                                 <div class="item-product__percent"><span>Giảm 15%</span></div>
                             </div>
                         </div>
-                        <div class="col-xl-3">
+                        <div class="col-xl-3 laptop">
                             <div class="card item-product img-hover box-shadow-1">
-                                <img class="card-img-top pl-3 pr-3" src="../images/Mac/macbook-air-gold-select-201810_4.webp" alt="">
+                                <img class="card-img-top pl-3 pr-3" src="../images/MSI/gf65.jpg" alt="">
                                 <div class="card-body">
-                                    <h5 class="card-title item-product__name"><a href="#">Apple MacBook Air M1 256GB 2020 I Chính hãng Apple Việt Nam </a></h5>
+                                    <h5 class="card-title item-product__name"><a href="../html/shopdetail.html">Laptop MSI Gaming GF63 10SC 804VN</a></h5>
                                     <div class="item-product__info">
-                                        <p class="btn btn-3">13.3 inches</p>
-                                        <p class="btn btn-3">8GB</p>
-                                        <p class="btn btn-3">SSD: 256GB</p>
-                                        <p class="btn btn-3">Apple M1</p>
+                                        <p class="btn btn-3">15.6 inches</p>
+                                        <p class="btn btn-3">16GB</p>
+                                        <p class="btn btn-3">SSD: 512GB</p>
+                                        <p class="btn btn-3">Intel Core i5</p>
                                     </div>
                                     <div class="item-product__price d-flex">
-                                        <p class="special-price">24.500.000&nbsp;₫</p>
-                                        <p class="old-price">28.990.000&nbsp;₫</p>
+                                        <p class="special-price">25.490.000&nbsp;₫</p>
+                                        <p class="old-price">29.490.000&nbsp;₫</p>
                                     </div>
                                     <p class="card-text promotion">Thu cũ lên đời - Trợ giá 500.000đ</p>
                                     <div class="item-product__raiting">
@@ -308,26 +311,26 @@
                                         <i class="fas fa-star checked"></i>
                                         <i class="fas fa-star checked"></i>
                                         <i class="fas fa-star checked"></i>
-                                        &nbsp;25 đánh giá
+                                        &nbsp;36 đánh giá
                                     </div>
                                 </div>
-                                <div class="item-product__percent"><span>Giảm 15%</span></div>
+                                <div class="item-product__percent"><span>Giảm 13%</span></div>
                             </div>
                         </div>
-                        <div class="col-xl-3">
+                        <div class="col-xl-3 laptop">
                             <div class="card item-product img-hover box-shadow-1">
-                                <img class="card-img-top pl-3 pr-3" src="../images/Mac/macbook-air-gold-select-201810_4.webp" alt="">
+                                <img class="card-img-top pl-3 pr-3" src="../images/Mac/pro14m1.jpg" alt="">
                                 <div class="card-body">
-                                    <h5 class="card-title item-product__name"><a href="#">Apple MacBook Air M1 256GB 2020 I Chính hãng Apple Việt Nam </a></h5>
+                                    <h5 class="card-title item-product__name"><a href="../html/shopdetail.html">Macbook Pro 14 inch 2021 | Chính hãng Apple Việt Nam</a></h5>
                                     <div class="item-product__info">
-                                        <p class="btn btn-3">13.3 inches</p>
-                                        <p class="btn btn-3">8GB</p>
-                                        <p class="btn btn-3">SSD: 256GB</p>
+                                        <p class="btn btn-3">14.2 inches</p>
+                                        <p class="btn btn-3">16GB</p>
+                                        <p class="btn btn-3">SSD: 512GB</p>
                                         <p class="btn btn-3">Apple M1</p>
                                     </div>
                                     <div class="item-product__price d-flex">
-                                        <p class="special-price">24.500.000&nbsp;₫</p>
-                                        <p class="old-price">28.990.000&nbsp;₫</p>
+                                        <p class="special-price">52.990.000&nbsp;₫</p>
+                                        <p class="old-price">60.990.000&nbsp;₫</p>
                                     </div>
                                     <p class="card-text promotion">Thu cũ lên đời - Trợ giá 500.000đ</p>
                                     <div class="item-product__raiting">
@@ -336,159 +339,128 @@
                                         <i class="fas fa-star checked"></i>
                                         <i class="fas fa-star checked"></i>
                                         <i class="fas fa-star checked"></i>
-                                        &nbsp;25 đánh giá
+                                        &nbsp;13 đánh giá
                                     </div>
                                 </div>
-                                <div class="item-product__percent"><span>Giảm 15%</span></div>
+                                <div class="item-product__percent"><span>Giảm 13%</span></div>
                             </div>
                         </div>
-                        <div class="col-xl-3">
+                        <div class="col-xl-3 desktop">
                             <div class="card item-product img-hover box-shadow-1">
-                                <img class="card-img-top pl-3 pr-3" src="../images/Mac/macbook-air-gold-select-201810_4.webp" alt="">
+                                <img class="card-img-top pl-3 pr-3" src="../images/manhinh/ss1.jpg" alt="">
                                 <div class="card-body">
-                                    <h5 class="card-title item-product__name"><a href="#">Apple MacBook Air M1 256GB 2020 I Chính hãng Apple Việt Nam </a></h5>
-                                    <div class="item-product__info">
-                                        <p class="btn btn-3">13.3 inches</p>
-                                        <p class="btn btn-3">8GB</p>
-                                        <p class="btn btn-3">SSD: 256GB</p>
-                                        <p class="btn btn-3">Apple M1</p>
-                                    </div>
+                                    <h5 class="card-title item-product__name"><a href="../html/shopdetail.html">Màn hình thông minh Samsung 27 inch LS27AM500NEXXV</a></h5>
                                     <div class="item-product__price d-flex">
-                                        <p class="special-price">24.500.000&nbsp;₫</p>
-                                        <p class="old-price">28.990.000&nbsp;₫</p>
+                                        <p class="special-price">4.990.000&nbsp;₫</p>
+                                        <p class="old-price">7.339.000&nbsp;₫</p>
                                     </div>
-                                    <p class="card-text promotion">Thu cũ lên đời - Trợ giá 500.000đ</p>
+                                    <p class="card-text promotion">Ưu đãi giảm 50,000 khi mua giá treo màn hình</p>
                                     <div class="item-product__raiting">
                                         <i class="fas fa-star checked"></i>
                                         <i class="fas fa-star checked"></i>
                                         <i class="fas fa-star checked"></i>
                                         <i class="fas fa-star checked"></i>
                                         <i class="fas fa-star checked"></i>
-                                        &nbsp;25 đánh giá
+                                        &nbsp;84 đánh giá
                                     </div>
                                 </div>
-                                <div class="item-product__percent"><span>Giảm 15%</span></div>
+                                <div class="item-product__percent"><span>Giảm 32%</span></div>
                             </div>
                         </div>
-                        <div class="col-xl-3">
+                        <div class="col-xl-3 desktop">
                             <div class="card item-product img-hover box-shadow-1">
-                                <img class="card-img-top pl-3 pr-3" src="../images/Mac/p1.webp" alt="">
+                                <img class="card-img-top pl-3 pr-3" src="../images/manhinh/lg2.jpg" alt="">
                                 <div class="card-body">
-                                    <h5 class="card-title item-product__name"><a href="#">Apple MacBook Air M1 256GB 2020 I Chính hãng Apple Việt Nam </a></h5>
-                                    <div class="item-product__info">
-                                        <p class="btn btn-3">13.3 inches</p>
-                                        <p class="btn btn-3">8GB</p>
-                                        <p class="btn btn-3">SSD: 256GB</p>
-                                        <p class="btn btn-3">Apple M1</p>
-                                    </div>
+                                    <h5 class="card-title item-product__name"><a href="../html/shopdetail.html">Màn hình LG Gaming 24 inch 24MP59G</a></h5>
                                     <div class="item-product__price d-flex">
-                                        <p class="special-price">24.500.000&nbsp;₫</p>
-                                        <p class="old-price">28.990.000&nbsp;₫</p>
+                                        <p class="special-price">3.190.000&nbsp;₫</p>
+                                        <p class="old-price">3.900.000&nbsp;₫</p>
                                     </div>
-                                    <p class="card-text promotion">Thu cũ lên đời - Trợ giá 500.000đ</p>
+                                    <p class="card-text promotion">Ưu đãi giảm 50,000 khi mua giá treo màn hình</p>
                                     <div class="item-product__raiting">
                                         <i class="fas fa-star checked"></i>
                                         <i class="fas fa-star checked"></i>
                                         <i class="fas fa-star checked"></i>
                                         <i class="fas fa-star checked"></i>
                                         <i class="fas fa-star checked"></i>
-                                        &nbsp;25 đánh giá
+                                        &nbsp;51 đánh giá
                                     </div>
                                 </div>
-                                <div class="item-product__percent"><span>Giảm 15%</span></div>
+                                <div class="item-product__percent"><span>Giảm 18%</span></div>
                             </div>
                         </div>
-                        <div class="col-xl-3">
+                        <div class="col-xl-3 desktop">
                             <div class="card item-product img-hover box-shadow-1">
-                                <img class="card-img-top pl-3 pr-3" src="../images/Mac/macbook-air-gold-select-201810_4.webp" alt="">
+                                <img class="card-img-top pl-3 pr-3" src="../images/manhinh/dell1.jpg" alt="">
                                 <div class="card-body">
-                                    <h5 class="card-title item-product__name"><a href="#">Apple MacBook Air M1 256GB 2020 I Chính hãng Apple Việt Nam </a></h5>
-                                    <div class="item-product__info">
-                                        <p class="btn btn-3">13.3 inches</p>
-                                        <p class="btn btn-3">8GB</p>
-                                        <p class="btn btn-3">SSD: 256GB</p>
-                                        <p class="btn btn-3">Apple M1</p>
-                                    </div>
+                                    <h5 class="card-title item-product__name"><a href="../html/shopdetail.html">Màn hình Dell UltraSharp 23.8 inch U2422H</a></h5>
                                     <div class="item-product__price d-flex">
-                                        <p class="special-price">24.500.000&nbsp;₫</p>
-                                        <p class="old-price">28.990.000&nbsp;₫</p>
+                                        <p class="special-price">6.890.000&nbsp;₫</p>
+                                        <p class="old-price">7.990.000&nbsp;₫</p>
                                     </div>
-                                    <p class="card-text promotion">Thu cũ lên đời - Trợ giá 500.000đ</p>
+                                    <p class="card-text promotion">Ưu đãi giảm 50,000 khi mua giá treo màn hình</p>
                                     <div class="item-product__raiting">
                                         <i class="fas fa-star checked"></i>
                                         <i class="fas fa-star checked"></i>
                                         <i class="fas fa-star checked"></i>
                                         <i class="fas fa-star checked"></i>
                                         <i class="fas fa-star checked"></i>
-                                        &nbsp;25 đánh giá
+                                        &nbsp;18 đánh giá
                                     </div>
                                 </div>
-                                <div class="item-product__percent"><span>Giảm 15%</span></div>
+                                <div class="item-product__percent"><span>Giảm 13%</span></div>
                             </div>
                         </div>
-                        <div class="col-xl-3">
+                        <div class="col-xl-3 pk">
                             <div class="card item-product img-hover box-shadow-1">
-                                <img class="card-img-top pl-3 pr-3" src="../images/Mac/macbook-air-gold-select-201810_4.webp" alt="">
+                                <img class="card-img-top pl-3 pr-3" src="../images/phụ kiện/airpods-2_6.jpg" alt="">
                                 <div class="card-body">
-                                    <h5 class="card-title item-product__name"><a href="#">Apple MacBook Air M1 256GB 2020 I Chính hãng Apple Việt Nam </a></h5>
-                                    <div class="item-product__info">
-                                        <p class="btn btn-3">13.3 inches</p>
-                                        <p class="btn btn-3">8GB</p>
-                                        <p class="btn btn-3">SSD: 256GB</p>
-                                        <p class="btn btn-3">Apple M1</p>
-                                    </div>
+                                    <h5 class="card-title item-product__name"><a href="../html/shopdetail.html">Tai nghe Bluetooth Apple AirPods 2 VN/A</a></h5>
                                     <div class="item-product__price d-flex">
-                                        <p class="special-price">24.500.000&nbsp;₫</p>
-                                        <p class="old-price">28.990.000&nbsp;₫</p>
+                                        <p class="special-price">3.250.000&nbsp;₫</p>
+                                        <p class="old-price">3.990.000&nbsp;₫</p>
                                     </div>
-                                    <p class="card-text promotion">Thu cũ lên đời - Trợ giá 500.000đ</p>
+                                    <p class="card-text promotion">Nhận gói 6 tháng Apple Music miễn phí</p>
                                     <div class="item-product__raiting">
                                         <i class="fas fa-star checked"></i>
                                         <i class="fas fa-star checked"></i>
                                         <i class="fas fa-star checked"></i>
                                         <i class="fas fa-star checked"></i>
                                         <i class="fas fa-star checked"></i>
-                                        &nbsp;25 đánh giá
+                                        &nbsp;51 đánh giá
                                     </div>
                                 </div>
-                                <div class="item-product__percent"><span>Giảm 15%</span></div>
+                                <div class="item-product__percent"><span>Giảm 18%</span></div>
                             </div>
                         </div>
-                        <div class="col-xl-3">
+                        <div class="col-xl-3 pk">
                             <div class="card item-product img-hover box-shadow-1">
-                                <img class="card-img-top pl-3 pr-3" src="../images/Mac/macbook-air-gold-select-201810_4.webp" alt="">
+                                <img class="card-img-top pl-3 pr-3" src="../images/phụ kiện/giaMH.jpg" alt="">
                                 <div class="card-body">
-                                    <h5 class="card-title item-product__name"><a href="#">Apple MacBook Air M1 256GB 2020 I Chính hãng Apple Việt Nam </a></h5>
-                                    <div class="item-product__info">
-                                        <p class="btn btn-3">13.3 inches</p>
-                                        <p class="btn btn-3">8GB</p>
-                                        <p class="btn btn-3">SSD: 256GB</p>
-                                        <p class="btn btn-3">Apple M1</p>
-                                    </div>
+                                    <h5 class="card-title item-product__name"><a href="../html/shopdetail.html">Giá treo màn hình máy tính North Bayou NB-F80</a></h5>
                                     <div class="item-product__price d-flex">
-                                        <p class="special-price">24.500.000&nbsp;₫</p>
-                                        <p class="old-price">28.990.000&nbsp;₫</p>
+                                        <p class="special-price">450.000&nbsp;₫</p>
+                                        <p class="old-price">650.000&nbsp;₫</p>
                                     </div>
-                                    <p class="card-text promotion">Thu cũ lên đời - Trợ giá 500.000đ</p>
+                                    <p class="card-text promotion">Trợ giá cực tốt</p>
                                     <div class="item-product__raiting">
                                         <i class="fas fa-star checked"></i>
                                         <i class="fas fa-star checked"></i>
                                         <i class="fas fa-star checked"></i>
                                         <i class="fas fa-star checked"></i>
                                         <i class="fas fa-star checked"></i>
-                                        &nbsp;25 đánh giá
+                                        &nbsp;139 đánh giá
                                     </div>
                                 </div>
-                                <div class="item-product__percent"><span>Giảm 15%</span></div>
+                                <div class="item-product__percent"><span>Giảm 30%</span></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <!-- pagination -->
-        <div class="pagination d-flex justify-content-center align-items-center pt-3 pb-3 bgr-1 border-bottom border-top">
+        <div class="pagination d-flex justify-content-center align-items-center pt-3 pb-3 border-bottom border-top">
             <nav aria-label="...">
                 <ul class="pagination m-0">
                   <li class="page-item disabled">
@@ -568,6 +540,8 @@
     <script src="../js/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script src="../js/home.js"></script>
 </body>
 </html>

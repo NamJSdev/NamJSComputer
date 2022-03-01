@@ -630,6 +630,7 @@
 .content__mail input{
   width: 45em;
 }
+/* trademark */
 .trademark .container > div img{
   object-fit: cover;
 }

@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="../css/all.min.css">
     <link rel="stylesheet" href="../css/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/about.css">
 </head>
 <body>
     <div class="main">
         <i class="back-to-top fas fa-angle-up"></i>
+        <a href="#" target="_blank" id="btnZaloChat" class="btn-zalo-chat"><img class="cpslazy loaded" data-src="https://cellphones.com.vn/media/icons/icon-zalo.png" data-ll-status="loaded" src="https://cellphones.com.vn/media/icons/icon-zalo.png"></a>
         <!-- header -->
         <div class="header">
             <!-- Header option -->
@@ -180,7 +183,101 @@
             </div>
         </div>
         <!-- end header -->
-
+        <!-- breadcrumb -->
+        <div class="breadcrumb-list">
+            <ol class="breadcrumb text-center d-flex justify-content-center align-items-center pt-3 pb-3">
+                <li class="breadcrumb-item"><a href="#" class="text-decoration-none"><i class="fas fa-home"></i> Trang
+                        chủ</a></li>
+                <li class="breadcrumb-item active">About Us</li>
+            </ol>
+        </div>
+        <!-- end -->
+        <!-- about-content -->
+        <div class="container">
+            <div class="row pt-3">
+                <div class="col-xl-5">
+                    <img class="img-fluid" src="../images/event/cuahangnjs.png" alt="cua hang">
+                </div>
+                <div class="col-xl-7">
+                    <h4 class="card-title item-product__name"><a href="../html/blogdetail.html">Chúng tôi cung cấp các dòng laptop phân phối chính hãng tại Việt Nam, phụ kiện từ các hãng tên tuổi...</a></h4>
+                    <p class="card-text">Chuyên cung cấp máy tính, linh kiện và dịch vụ sửa chữa laptop chuyên nghiệp hàng đầu Hải Dương.
+                        NamJS Laptop cung cấp rất nhiều sản phẩm laptop cũ, mới của các thương hiệu nổi tiếng trên thế giới. Các thương hiệu laptop cũ HP, Dell, Sony….
+                        Do đó rất dễ hiểu tại sao NamJS Laptop là địa chỉ tin cậy khi mua laptop cũ, mới đang được nhiều khách hàng tìm kiếm nhất khi tìm mua laptop cũ...
+                    </p>
+                    <button class="btn btn-1 w-50"><a class="nav-link text-white" href="../html/blogdetail.html">Chi tiết</a></button>
+                </div>
+            </div>
+        </div>
+        <!-- end -->
+        <!-- about-content-extend -->
+        <div class="about-content-extend pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4">
+                        <i class="fas fa-truck-moving"></i>
+                        <h4 class="mt-2 mb-2">Free shipping</h4>
+                        <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, impedit?</p>
+                    </div>
+                    <div class="col-xl-4">
+                        <i class="fas fa-money-bill-alt"></i>
+                        <h4 class="mt-2 mb-2">Miễn phí 100% chi phí bảo hành, bảo dưỡng</h4>
+                        <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, impedit?</p>
+                    </div>
+                    <div class="col-xl-4">
+                        <i class="far fa-life-ring"></i>
+                        <h4 class="mt-2 mb-2">Hỗ trợ khách hàng 24/7</h4>
+                        <p class="text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, impedit?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end -->
+        <!-- trademark -->
+        <div class="trademark pb-5 pt-5">
+            <div class="container owl-carousel owl-theme trademark-slide">
+                <div>
+                    <a href="#">
+                        <img src="../images/thuonghieu/Acer.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="../images/thuonghieu/Asus.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="../images/thuonghieu/Dell.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="../images/thuonghieu/HP.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="../images/thuonghieu/Lenovo.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="../images/thuonghieu/LG.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="../images/thuonghieu/msi.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="../images/thuonghieu/Thinkpad.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- end trademark -->
         <!-- footer -->
         <div class="footer bgr-1 border-top bgr-1">
             <div class="container footer-content">
@@ -243,6 +340,7 @@
     <script src="../js/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="../js/home.js"></script>
 </body>
 </html>

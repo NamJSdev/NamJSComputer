@@ -170,3 +170,46 @@ AOS.init();
       })
     }, false)
 }())
+// Accordion
+$('.accordion__content').hide();
+$(document).on('click','.accordion li',function(){
+    $('.accordion__content').slideUp();
+    if($(this).find('.fas').hasClass('fa-plus')){
+        $('.accordion .fas').removeClass('fa-minus').addClass('fa-plus');
+        $(this).find('.fas').removeClass('fa-plus').addClass('fa-minus');
+        $(this).find('.accordion__content').slideDown();
+    }
+    else{
+        $(this).find('.fas').removeClass('fa-minus').addClass('fa-plus');
+    }
+});
+// filter product
+setInterval(function() {
+    filter();
+},500);
+function filter(){
+    var laptop = $('.laptop');
+    var desktop = $('.desktop');
+    var pk = $('.pk');
+    var conceptName = $('#aioConceptName').find(":selected").text();
+    if(conceptName == 'All'){
+        laptop.fadeIn();
+        desktop.fadeIn();
+        pk.fadeIn();
+    }
+    else if(conceptName == 'Laptop'){
+        laptop.fadeIn();
+        desktop.fadeOut();
+        pk.fadeOut();
+    }
+    else if(conceptName == 'Màn hình'){
+        laptop.fadeOut();
+        desktop.fadeIn();
+        pk.fadeOut();
+    }
+    else if(conceptName == 'Phụ kiện'){
+        laptop.fadeOut();
+        desktop.fadeOut();
+        pk.fadeIn();
+    }
+};

@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NamJS Computer | Cart</title>
+    <title>NamJS Computer | </title>
     <link rel="icon" type="image/png" href="../images/icon/iconweb.png"/>
     <link rel="stylesheet" href="../css/all.min.css">
     <link rel="stylesheet" href="../css/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/checkout.css">
 </head>
 <body>
     <div class="main">
@@ -66,7 +66,7 @@
                 <div height="100%" class="container">
                     <div height="100%" class="row">
                         <div class="header__logo col-xl-3 col-sm-3 col-lg-3">
-                            <a href="index.html">
+                            <a href="../index.html">
                                 <img class="img-fluid logo-img" src="../images/thuonghieu/logonamjscomputer.png" alt="logo">
                             </a>
                         </div>
@@ -133,7 +133,7 @@
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
                                     <ul class="nav-category-extend dropdown">
-                                        <li class="dropdown-item dropbtn"><a href="../html/shop.html"><i class="fas fa-laptop"></i> Laptop <i class="fas fa-angle-right"></i></a>
+                                        <li class="dropdown-item dropbtn"><a href="shop.html"><i class="fas fa-laptop"></i> Laptop <i class="fas fa-angle-right"></i></a>
                                             <ul class="dropdown-content dropdown">
                                                 <li class="dropbtn"><a href="../html/shop.html">MacBook <i class="fas fa-angle-right"></i></a>
                                                     <ul class="dropdown-content">
@@ -151,14 +151,14 @@
                                                 <li><a href="shop.html">Msi</a></li>
                                             </ul>
                                         </li>
-                                        <li class="dropdown-item dropbtn"><a href="../html/shop.html"><i class="fas fa-desktop"></i> Màn Hình <i class="fas fa-angle-right"></i></a>
+                                        <li class="dropdown-item dropbtn"><a href="shop.html"><i class="fas fa-desktop"></i> Màn Hình <i class="fas fa-angle-right"></i></a>
                                             <ul class="dropdown-content">
                                                 <li><a href="shop.html">Màn hình gaming</a></li>
                                                 <li><a href="shop.html">Màn hình đồ họa</a></li>
                                                 <li><a href="shop.html">Linh kiện laptop</a></li>
                                             </ul>
                                         </li>
-                                        <li class="dropdown-item dropbtn"><a href="../html/shop.html"><i class="fab fa-usb"></i> Phụ Kiện <i class="fas fa-angle-right"></i></a>
+                                        <li class="dropdown-item dropbtn"><a href="shop.html"><i class="fab fa-usb"></i> Phụ Kiện <i class="fas fa-angle-right"></i></a>
                                             <ul class="dropdown-content">
                                                 <li><a href="shop.html">Tai nghe</a></li>
                                                 <li><a href="shop.html">Chuột</a></li>
@@ -190,201 +190,197 @@
         <!-- breadcrumb -->
         <div class="breadcrumb-list">
             <ol class="breadcrumb text-center d-flex justify-content-center align-items-center pt-3 pb-3">
-                <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none"><i class="fas fa-home"></i> Trang
+                <li class="breadcrumb-item"><a href="../index.html" class="text-decoration-none"><i class="fas fa-home"></i> Trang
                         chủ</a></li>
-                <li class="breadcrumb-item active">Giỏ hàng</li>
+                <li class="breadcrumb-item active">Thanh Toán</li>
             </ol>
         </div>
         <!-- end breadcrumb -->
 
-        <!-- cart -->
-        <div class="cart pt-5 pb-3">
-            <div class="container">
-                <h2>Giỏ hàng của bạn</h2>
-                <table class="table border">
-                    <thead>
-                      <tr>
-                        <th>Ảnh</th>
-                        <th>Tên sản phẩm</th>
-                        <th>Đơn giá</th>
-                        <th>Số lượng</th>
-                        <th>Thành tiền</th>
-                        <th>Last Name</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row"><img class="img-fluid" src="../images/Mac/p1.webp" alt=""></th>
-                        <td>MacBook Air M1 2020 256GB</td>
-                        <td>24 500 000 ₫</td>
-                        <td>
-                            <div class="buttons_added">
-                                <input class="minus is-form" type="button" value="-">
-                                <input aria-label="quantity" class="input-qty" max="20" min="1" name="" type="number" value="1">
-                                <input class="plus is-form" type="button" value="+">
+        <!-- Checkout -->
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-md-4 order-md-2 mb-4">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-muted">Đơn hàng của bạn</span>
+                        <span class="badge badge-secondary badge-pill">3</span>
+                    </h4>
+                    <ul class="list-group mb-3 sticky-top">
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div class="w-50">
+                                <h6 class="my-0">MacBook Air M1 2020</h6>
+                                <small class="text-muted">Danh mục laptop</small>
                             </div>
-                        </td>
-                        <td>24 500 000 ₫</td>
-                        <td>
-                            <i class="fas fa-pencil-alt"></i>
-                            <i class="fas fa-times"></i>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><img class="img-fluid" src="../images/MSI/gf66.jpg" alt=""></th>
-                        <td>Laptop MSI Gaming GF63 10SC 804VN</td>
-                        <td>24 490 000 ₫</td>
-                        <td>
-                            <div class="buttons_added">
-                                <input class="minus is-form" type="button" value="-">
-                                <input aria-label="quantity" class="input-qty" max="20" min="1" name="" type="number" value="1">
-                                <input class="plus is-form" type="button" value="+">
+                            <span class="text-muted">24 500 000 ₫</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div class="w-50">
+                                <h6 class="my-0">Laptop MSI Gaming GF63 10SC 804VN</h6>
+                                <small class="text-muted">Danh mục laptop</small>
                             </div>
-                        </td>
-                        <td>24 490 000 ₫</td>
-                        <td>
-                            <i class="fas fa-pencil-alt"></i>
-                            <i class="fas fa-times"></i>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><img class="img-fluid" src="../images/manhinh/ss1.jpg" alt=""></th>
-                        <td>Màn hình thông minh Samsung 27 inch LS27AM500NEXXV</td>
-                        <td>4 990 000 ₫</td>
-                        <td>
-                            <div class="buttons_added">
-                                <input class="minus is-form" type="button" value="-">
-                                <input aria-label="quantity" class="input-qty" max="20" min="1" name="" type="number" value="1">
-                                <input class="plus is-form" type="button" value="+">
+                            <span class="text-muted">24 490 000 ₫</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div class="w-50">
+                                <h6 class="my-0">Màn hình thông minh Samsung 27 inch LS27AM500NEXXV</h6>
+                                <small class="text-muted">Danh mục màn hình</small>
                             </div>
-                        </td>
-                        <td>4 990 000 ₫</td>
-                        <td>
-                            <i class="fas fa-pencil-alt"></i>
-                            <i class="fas fa-times"></i>
-                        </td>
-                      </tr>
-                    </tbody>
-                </table>
-                <div class="row">
-                    <div class="col-xl-6 col-sm-6 col-lg-6 col-12">
-                        <button class="btn btn-primary"><a class="text-white text-decoration-none" href="shop.html">Tiếp tục mua sắm</a></button>
-                    </div>
-                    <div class="col-xl-6 d-flex justify-content-start justify-content-sm-end mt-3 m-sm-0">
-                        <button class="btn btn-primary mr-3">Cập nhật giỏ hàng</button>
-                        <button class="btn btn-primary">Xóa giỏ hàng</button>
-                    </div>
+                            <span class="text-muted">4 990 000 ₫</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between bg-light">
+                            <div class="text-primary">
+                                <h6 class="my-0">NamJS Computer</h6>
+                                <small>Mã giảm giá</small>
+                            </div>
+                            <span class="text-primary">-300 000 ₫</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Thành tiền (VNĐ)</span>
+                            <strong>53 680 000 ₫</strong>
+                        </li>
+                    </ul>
+                    <form class="card p-2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="NamJS Computer">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-primary">Áp dụng</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="row pt-3 pb-5">
-                    <div class="col-xl-5">
-                        <h5 class="border-bottom pt-3 pb-3">Địa chỉ giao hàng</h5>
-                        <form class="needs-validation" novalidate>
-                            <div class="form-row">
-                              <div class="col-md-6 mb-3">
-                                <label for="validationTooltip01">Thôn/Xóm/Tổ dân phố</label>
-                                <input type="text" class="form-control" id="validationTooltip01" required>
-                                <div class="valid-tooltip">
-                                  Looks good!
-                                </div>
-                              </div>
-                              <div class="col-md-6 mb-3">
-                                <label for="validationTooltip02">Xã/Phường/Thị trấn</label>
-                                <input type="text" class="form-control" id="validationTooltip02" required>
-                                <div class="valid-tooltip">
-                                  Looks good!
-                                </div>
-                              </div>
+                <div class="col-md-8 order-md-1">
+                    <h4 class="mb-3">Thông tin khách hàng</h4>
+                    <form class="needs-validation" novalidate="">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName">Họ đệm</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                                <div class="invalid-feedback"> Valid first name is required. </div>
                             </div>
-                            <div class="form-row">
-                              <div class="col-md-6 mb-3">
-                                <label for="validationTooltip03">Quận huyện/Thành phố</label>
-                                <input type="text" class="form-control" id="validationTooltip03" required>
-                                <div class="invalid-tooltip">
-                                  Please provide a valid city.
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName">Tên</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                                <div class="invalid-feedback"> Valid last name is required. </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="username">Tên tài khoản</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">@</span>
                                 </div>
-                              </div>
-                              <div class="col-md-3 mb-3">
-                                <label for="validationTooltip04">Tỉnh/TP</label>
-                                <select class="custom-select" id="validationTooltip04" required>
-                                  <option selected disabled value="">Chọn...</option>
-                                  <option>Hà Nội</option>
-                                  <option>Hải Dương</option>
-                                  <option>Bắc Giang</option>
-                                  <option>Hải Phòng</option>
-                                  <option>Nghệ An</option>
-                                  <option>TP HCM</option>
+                                <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                                <div class="invalid-feedback" style="width: 100%;"> Your username is required. </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email">Email <span class="text-muted">(Không bắt buộc)</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                            <div class="invalid-feedback"> Please enter a valid email address for shipping updates. </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address">Số nhà/Đường/Xóm</label>
+                            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                            <div class="invalid-feedback"> Please enter your shipping address. </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address2">Xã/Phường Thị Trấn</label>
+                            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite" required="">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5 mb-3">
+                                <label for="country">Huyện/Thị xã</label>
+                                <select class="custom-select d-block w-100" id="country" required="">
+                                    <option value="">Lựa chọn...</option>
+                                    <option>Chí Linh</option>
+                                    <option>Lê Lợi</option>
+                                    <option>Nam Sách</option>
+                                    <option>Chí Minh</option>
                                 </select>
-                                <div class="invalid-tooltip">
-                                  Please select a valid state.
-                                </div>
-                              </div>
-                              <div class="col-md-3 mb-3">
-                                <label for="validationTooltip05">Zip</label>
-                                <input type="text" class="form-control" id="validationTooltip05" required>
-                                <div class="invalid-tooltip">
-                                  Please provide a valid zip.
-                                </div>
-                              </div>
+                                <div class="invalid-feedback"> Please select a valid country. </div>
                             </div>
-                            <button class="btn btn-primary" type="submit">Cập nhật thông tin</button>
-                        </form>
-                    </div>
-                    <div class="col-xl-3">
-                        <h5 class="border-bottom pt-3 pb-3">Mã Giảm giá</h5>
-                        <form class="needs-validation" novalidate>
-                            <div class="form-row">
-                                <div class="col-md-12 mb-3">
-                                    <label for="validationTooltip01">Nhập mã giảm giá (Nếu có)</label>
-                                    <input type="text" class="form-control" id="validationTooltip01" required>
-                                    <div class="valid-tooltip">
-                                        Looks good!
-                                    </div>
-                                </div>
-                                <button class="btn btn-primary" type="submit">Áp dụng</button>
+                            <div class="col-md-4 mb-3">
+                                <label for="state">Tỉnh/Thành phố</label>/label>
+                                <select class="custom-select d-block w-100" id="state" required="">
+                                    <option value="">Lựa chọn...</option>
+                                    <option>Hà Nội</option>
+                                    <option>Tp Hồ Chí Minh</option>
+                                    <option>Hải Dương</option>
+                                    <option>Bắc Giang</option>
+                                    <option>Bắc Ninh</option>
+                                </select>
+                                <div class="invalid-feedback"> Please provide a valid state. </div>
                             </div>
-                        </form>
-                    </div>
-                    <div class="col-xl-4 text-center">
-                        <h5 class="border-bottom pt-3 pb-3">Thanh Toán</h5>
-                        <table class="table">
-                            <tbody>
-                                <tr>
-                                    <td class="border-top-0">Đơn giá</td>
-                                    <td class="border-top-0">70 000 000 ₫</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">Đơn vị vận chuyển</td>
-                                </tr>
-                                <tr>
-                                    <td class="border-top-0">
-                                        <label class="custom-control custom-radio">
-                                            <input id="radio1" name="Express" type="radio">
-                                            <span class="custom-control-description">GHN Express</span>
-                                        </label>
-                                    </td>
-                                    <td class="border-top-0">20 000 ₫</td>
-                                </tr>
-                                <tr>
-                                    <td class="border-top-0">
-                                        <label class="custom-control custom-radio">
-                                            <input id="radio1" name="Express" type="radio">
-                                            <span class="custom-control-description">Ninja Van</span>
-                                        </label>
-                                    </td>
-                                    <td class="border-top-0">15 000 ₫</td>
-                                </tr>
-                                <tr>
-                                    <td class="font-weight-bold">Thành Tiền</td>
-                                    <td>70 020 000 ₫</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <button class="btn btn-primary"><a class="text-decoration-none text-white" href="checkout.html">Đi đến thanh toán</a></button>
-                    </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="zip">Zip</label>
+                                <input type="text" class="form-control" id="zip" placeholder="" required="">
+                                <div class="invalid-feedback"> Zip code required. </div>
+                            </div>
+                        </div>
+                        <hr class="mb-4">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="same-address">
+                            <label class="custom-control-label" for="same-address">Giao hàng đến địa chỉ trên</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="save-info">
+                            <label class="custom-control-label" for="save-info">Lưu thông tin tạo tài khoản</label>
+                        </div>
+                        <hr class="mb-4">
+                        <h4 class="mb-3">Phương thức thanh toán</h4>
+                        <div class="d-block my-3">
+                            <div class="custom-control custom-radio">
+                                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+                                <label class="custom-control-label" for="credit">Credit card</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                                <label class="custom-control-label" for="debit">Zalo Pay</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                                <label class="custom-control-label" for="paypal">PayPal</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input id="bank" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                                <label class="custom-control-label" for="bank">Thẻ ngân hàng</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input id="Momo" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                                <label class="custom-control-label" for="Momo">Momo</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="cc-name">Tên thẻ</label>
+                                <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                                <small class="text-muted">Full name as displayed on card</small>
+                                <div class="invalid-feedback"> Name on card is required </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="cc-number">Credit card number</label>
+                                <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                                <div class="invalid-feedback"> Credit card number is required </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <label for="cc-expiration">Expiration</label>
+                                <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                                <div class="invalid-feedback"> Expiration date required </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="cc-cvv">CVV</label>
+                                <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                                <div class="invalid-feedback"> Security code required </div>
+                            </div>
+                        </div>
+                        <hr class="mb-4">
+                        <button class="btn btn-primary btn-lg btn-block" type="submit">Thanh Toán</button>
+                    </form>
                 </div>
             </div>
         </div>
-
         <!-- end -->
 
         <!-- footer -->

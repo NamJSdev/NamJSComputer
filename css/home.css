@@ -134,11 +134,11 @@
 }
 .slide-item .owl-next {
   top: 30%;
-  right: -5%;
+  right: 4%;
 }
 .slide-item .owl-prev {
   top: 30%;
-  left: -5%;
+  left: 4%;
 }
 .content__mail input {
   width: 35em;
@@ -169,7 +169,7 @@
   margin: 0px;
 }
 .pro-header .title h3 {
-  width: 9em;
+  width: 7em;
 }
 .pro-header .title h3 a{
   font-size: 15pt;

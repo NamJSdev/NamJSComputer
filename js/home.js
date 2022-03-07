@@ -214,7 +214,6 @@ function filter(){
     }
 };
 // Menu phone 
-// menu_phone
 $(document).on('click','.menu__phone',function(){
     if($(this).find('.fas').hasClass('fa-bars')){
         $(this).find('.fas').removeClass('fa-bars').addClass('fa-times')

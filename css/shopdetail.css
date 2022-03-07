@@ -191,3 +191,13 @@
 .trademark .owl-dots,.trademark .owl-nav{
   display: none;
 }
+
+/* Mobile */
+@media( max-width:767px){
+  .pro-header .title h3 {
+    width: 8em;
+  }
+  .pro-header .title button{
+    margin-right: 37px;
+  }
+}

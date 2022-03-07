@@ -19,6 +19,10 @@
   font-family: "Dosis", sans-serif;
   font-family: "Roboto", sans-serif;
 }
+.main{
+  width: 100%;
+  overflow: hidden;
+}
 body[data-aos-duration="1000"] [data-aos],
 [data-aos][data-aos][data-aos-duration="1000"] {
   transition-duration: 1000ms;
@@ -645,6 +649,11 @@ body[data-aos-duration="1000"] [data-aos],
 }
 .item-product {
   min-height: 40em;
+}
+.row-gap {
+  row-gap: 30px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 }
 /* Mobile */
